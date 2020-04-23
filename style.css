@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    --accent-color: #203858; 
+}
+
+.nav-container {
+    background-color: var(--accent-color);
+}
+
+.navigation {
+    max-width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    min-height: 10vh;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.hamburger span {
+    background-color: white;
+    color: white;
+    height: 2px;
+    width: 30px;
+    margin: .2rem 0;
+
+}
+
+.nav-sidebar {
+    display: none;
+}
+
+.text-logo {
+    font-size: 3rem;
+    
+}
+
+.fa-gem {
+    padding-right: .3rem;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    flex-basis: 100px;
+}
+
+.nav-item {
+    list-style: none;
+    margin: 1rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    width: 100vw;
+    height: 70vh;
+    background-image: url(./img/header3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.paris-studios {
+    font-size: 4rem;
+    border: 1px solid white;
+    color: white;
+    padding: 1rem 3rem;
+    background-color: rgba(0,0,0,0.3);
+    margin-bottom: 2rem;
+}
+
+.cdc {
+    font-size: 2rem;
+    border: 1px solid white;
+    color: white;
+    padding: 1rem 3rem;
+    background-color: rgba(0,0,0,0.4);
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: .5rem 1.2rem;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    margin-top: 1.5rem;
+    outline: none;
+    border-radius: 3px;
+    transition: .3s ease-in-out;
+}
+
+.btn:hover {
+    opacity: 0.7;
+    
+}
+
+.btn-portfolio {
+    padding: .6rem 1.5rem;
+    background-color: var(--accent-color);
+    color: white;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 3px;
+
+}
+
+.btn-portfolio:hover {
+    animation: button-animation 100ms ease-in-out;
+}
+
+@keyframes button-animation {
+    0% {
+        transform: rotateZ(5deg);
+    }
+    50% {
+        transform: rotateZ(-5deg)
+    }
+    100% {
+        transform: rotateZ(0deg)
+    }
+}
+
+.services-container {
+    width: 100%;
+    background-color: #e9e6e1;
+}
+
+.services {
+    max-width: 90rem;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 5rem;
+    background-color: #e9e6e1;
+    color: #8b8785;
+}
+
+.ptojects {
+    width: 80%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card .fa-gem, .fa-pencil-alt, .fa-eye, .fa-thumbs-up {
+    font-size: 5rem;
+    padding-bottom: 1.5rem;
+    color: #7a7875;
+}
+
+.card h1 {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.card p {
+    font-size: .9rem;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.latest-projects {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    font-weight: 500;
+}
+
+.attention {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+    height: 15vh;
+    color: white;
+    font-size: .7rem;
+}
+
+.attention h2 {
+    padding-right: 2rem;
+}
+
+footer {
+    height: 30vh;
+    background-color: #2a2a2a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+footer .fa-gem {
+    font-size: 3rem;
+}
+
+.footer-item {
+    padding: .3rem 0rem;
+}
+
+.fa-facebook-f,
+.fa-instagram,
+.fa-twitter,
+.fa-pinterest,
+.fa-github {
+    margin-right: .2rem;
+}
+
+
+.fa-google-plus {
+    margin: 0;
+}
+
+.social {
+    color: #aaaaaa;
+    margin-bottom: .7rem;
+}
+
+.footer-text {
+    color: #525252;
+}
+
+.accent {
+    color: #bbbbbb;
+}
+
+.showreel {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    color: #95928c;
+    padding: .5rem;
+    margin-top: 3rem;
+}
+
+.latest-projects {
+    display: flex;
+    flex-direction: column;
+    background-color: #e9e6e1;
+}
+
+.reel-item {
+    padding: 3rem .5rem;
+}
+
+.reel-item img {
+    
+    width: 15rem;
+    height: auto;
+}
+
+@media only screen and (max-width: 1130px) {
+
+    .navigation {
+        max-width: 60vw;
+        margin: 0 auto;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: white;
+        min-height: 10vh;
+    }
+
+    .services {
+        padding: 2rem 5rem;
+    }
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .showreel {
+        display: block;
+    }
+    
+    .box {
+        color: #95928c;
+        padding: .5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 1.5rem;
+    }
+    
+    .latest-projects {
+        display: flex;
+        flex-direction: column;
+        background-color: #e9e6e1;
+    }
+    
+    .reel-item {
+        padding: .5rem 0;
+    }
+
+    .reel-item img {
+        width: 20rem;
+        height: auto;
+    }
+
+    .reel-item:last-child {
+        padding-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+
+    .navigation {
+        display: flex;
+        max-width: 60vw;
+        margin: 0 auto;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: white;
+        min-height: 10vh;
+    }
+    
+    .nav-items {
+        display: none;
+    }
+    .card .fa-gem, .fa-pencil-alt, .fa-eye, .fa-thumbs-up {
+        font-size: 5rem;
+        padding-bottom: .5rem;
+    }
+    
+    .services {
+        display: block;
+    }
+
+    .card {
+        padding: 3rem 6rem;
+    }
+
+    .paris-studios {
+        font-size: 2rem;
+        border: 1px solid white;
+        color: white;
+        padding: 1rem 3rem;
+        background-color: rgba(0,0,0,0.3);
+        margin-bottom: 2rem;
+    }
+    
+    .cdc {
+        font-size: 1rem;
+        border: 1px solid white;
+        color: white;
+        padding: 1rem 3rem;
+        background-color: rgba(0,0,0,0.4);
+        margin-bottom: 2rem;
+    }
+
+    .attention {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--accent-color);
+        height: 20vh;
+        color: white;
+        font-size: .7rem;
+    }
+
+    .attention h2, .attention p {
+        flex: 2 1 40rem;
+        text-align: center;
+    }
+
+    .footer-text {
+        font-size: .7rem;
+    }
+
+    .reel-item {
+        padding: 0;
+    }
+
+    .box {
+        margin-bottom: 1rem;
+    }
+
+    .services {
+        padding: 0;
+    }
+
+    .nav-sidebar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 100vw; 
+        height: 100vh;
+        background-color: var(--accent-color);
+        visibility: hidden;
+        transform: translate(100%, 0);
+        transition: all 0.3s ease-in-out;
+     }
+
+     .hamburger {
+         display: flex;
+         position: absolute;
+         top: 2.2rem;
+         right: 3rem;
+         z-index: 1000;
+     }
+
+     .nav-sidebar ul {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+     }
+
+     .nav-sidebar ul li {
+         list-style: none;
+         padding: 2rem 0;
+         font-size: 2rem;
+     }
+
+     .nav-sidebar a {
+        color: white;
+        text-decoration: none;
+     }
+
+}
