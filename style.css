@@ -346,12 +346,12 @@ footer .fa-gem {
 
     .navigation {
         display: flex;
-        max-width: 60vw;
+        max-width: 70vw;
         margin: 0 auto;
         flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         color: white;
         min-height: 10vh;
     }
@@ -440,9 +440,7 @@ footer .fa-gem {
 
      .hamburger {
          display: flex;
-         position: absolute;
-         top: 2.2rem;
-         right: 3rem;
+         
          z-index: 1000;
      }
 
